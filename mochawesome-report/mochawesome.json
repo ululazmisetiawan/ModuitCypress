@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-18T08:12:56.498Z",
+    "end": "2023-08-18T08:13:11.957Z",
+    "duration": 15459,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0649d72d-a0b8-43e2-8603-206717ab8261",
+      "title": "",
+      "fullFile": "cypress/e2e/integration/Register.js",
+      "file": "cypress/e2e/integration/Register.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b421c893-5bdd-40fd-a8d3-c7be687fa129",
+          "title": "Register",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register with valid credential",
+              "fullTitle": "Register Register with valid credential",
+              "timedOut": null,
+              "duration": 8161,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://reksa.moduit.id/idn/sign_up');\ncy.title().should('eq', 'moduit - Gateway to Wealth');\ncy.get('#fullname').type('Ulul Azmi Setiawan');\ncy.get('#email').type(email);\ncy.get('#password').type('Ulul123@');\ncy.get('#confirmPassword').type('Ulul123@');\ncy.get('#phone').type('83312412241');\ncy.wait(2000);\ncy.contains('button', 'Daftar').click();\ncy.wait(3000);\ncy.get('h1').should('have.text', 'Selamat Datang di Moduit');",
+              "err": {},
+              "uuid": "bfb90bb9-7133-4326-b0cc-ff5c3d238429",
+              "parentUUID": "b421c893-5bdd-40fd-a8d3-c7be687fa129",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Register with registered email",
+              "fullTitle": "Register Register with registered email",
+              "timedOut": null,
+              "duration": 6066,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://reksa.moduit.id/idn/sign_up');\ncy.title().should('eq', 'moduit - Gateway to Wealth');\ncy.get('#fullname').type('Ulul Azmi Setiawan');\ncy.get('#email').type(email);\ncy.get('#password').type('Ulul123@');\ncy.get('#confirmPassword').type('Ulul123@');\ncy.get('#phone').type('83312412241');\ncy.wait(3000);\ncy.contains('Alamat email sudah terdaftar');",
+              "err": {},
+              "uuid": "e9732a1f-c1b8-4699-b140-8dc4958e0e53",
+              "parentUUID": "b421c893-5bdd-40fd-a8d3-c7be687fa129",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bfb90bb9-7133-4326-b0cc-ff5c3d238429",
+            "e9732a1f-c1b8-4699-b140-8dc4958e0e53"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14227,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
